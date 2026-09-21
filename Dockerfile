@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN chmod +x gradle && ./gradlew clean bootJar --no-daemon
+RUN chmod +x gradlew && ./gradlew clean bootJar --no-daemon
 
 # Stage 2
 FROM eclipse-temurin:21-jdk-jammy
